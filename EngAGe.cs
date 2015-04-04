@@ -123,7 +123,7 @@ public class EngAGe : MonoBehaviour {
 			error = "Login failed";
 			Application.LoadLevel(sceneLoginFail);
 		}
-		else
+		else if (loginData["version"] != null)
 		{
 			errorCode = 0;
 			error = "";
@@ -144,6 +144,12 @@ public class EngAGe : MonoBehaviour {
 				
 				Application.LoadLevel(sceneParameters);
 			}
+		}
+		else
+		{
+			errorCode = 203;
+			error = "Sorry, this game is not public and you don't have access to it.";
+			Application.LoadLevel(sceneLoginFail);
 		}
 	}
 
