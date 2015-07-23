@@ -9,6 +9,8 @@ using SimpleJSON;
 using System;
 
 public class EngAGe : MonoBehaviour {
+	
+	static public EngAGe E;
 		
 	private static int idStudent;
 	private static int idPlayer = -1;
