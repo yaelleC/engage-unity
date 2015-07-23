@@ -29,6 +29,10 @@ public class EngAGe : MonoBehaviour {
 	
 	private Dictionary<string, string> headers = new Dictionary<string, string>();
 
+	void Awake() {
+		E = this;
+	}
+	
 	// Use this for initialization
 	void Start () {		
 		headers.Add("Content-Type", "application/json");
