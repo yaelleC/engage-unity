@@ -392,7 +392,7 @@ public class EngAGe : MonoBehaviour {
 	{
 		print ("--- get Badges ---");
 
-		string URL = baseURL + "/badges/seriousgame/" + p_idSG + "/version/" + version + "/player/" + idPlayer;
+		string URL = baseURL + "/badges/all/seriousgame/" + p_idSG + "/version/" + version + "/player/" + idPlayer;
 
 		WWW www = new WWW(URL);
 		
